@@ -38,6 +38,7 @@ import rpui.widgets.stack_layout;
 import rpui.widgets.checkbox;
 import rpui.widgets.label;
 import rpui.widgets.multiline_label;
+import rpui.widgets.tree_list;
 
 /// Factory for construction view from rpdl layout data.
 class RPDLWidgetFactory {
@@ -85,6 +86,12 @@ class RPDLWidgetFactory {
 
             case "MultilineLabel":
                 return createWidget!MultilineLabel(widgetNode, parentWidget);
+
+            case "TreeList":
+                return createWidget!TreeList(widgetNode, parentWidget);
+
+            case "TreeListNode":
+                return createWidget!TreeListNode(widgetNode, parentWidget);
 
             default:
                 return null;

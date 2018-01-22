@@ -154,6 +154,8 @@ class Widget {
 
     @property ref Children children() { return p_children; }
 
+    @property uint depth() { return p_depth; }
+
 package:
     @property Widget associatedWidget() { return p_associatedWidget; }
     @property RenderFactory renderFactory() { return manager.renderFactory; }
@@ -256,6 +258,7 @@ private:
     size_t p_id;
     string p_style;
     Widget p_parent;
+    uint p_depth = 0;
 
     // Navigation (for focus)
     Widget p_nextWidget = null;
@@ -511,6 +514,7 @@ public:
         widget.p_parent = this;
         widget.p_nextWidget = p_firstWidget;
         widget.p_prevWidget = p_lastWidget;
+        widget.p_depth = p_depth + 1;
 
         p_lastWidget.p_nextWidget = widget;
         p_firstWidget.p_prevWidget = widget;

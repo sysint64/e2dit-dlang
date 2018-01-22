@@ -6,6 +6,9 @@ Config
     gaps: 3, 3
 
 Icons
+    grid: 3, 3
+    ghost: 7, 5
+    red_triangle: 1, 4
     file: 1, 1
     folder: 2, 1
     check: 4, 1

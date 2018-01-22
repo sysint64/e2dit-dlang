@@ -149,3 +149,38 @@ Panel
                     top     : 275, 148, 10, 8
                     middle  : 275, 159, 10, 8
                     bottom  : 275, 171, 10, 8
+
+TreeListNode
+    openIcon                : 4, 152, 9, 9
+    closeIcon               : 17, 152, 9, 9
+    iconOffsets             : 2, -1
+    iconGaps                : 2
+    textLeftMargin          : 9
+    textRightMargin         : 9
+
+    Leave
+        left                : 55, 180, 5, 21
+        center              : 68, 180, 5, 21
+        right               : 81, 180, 5, 21
+        textOffset          : 0, 0
+        textColor           : 0, 0, 0
+
+    Enter
+        left                : 55, 131, 5, 21
+        center              : 68, 131, 5, 21
+        right               : 81, 131, 5, 21
+        textOffset          : 0, 0
+        textColor           : 0, 0, 0
+
+    Click
+        left                : 55, 131, 5, 21
+        center              : 68, 131, 5, 21
+        right               : 81, 131, 5, 21
+        textOffset          : 0, 0
+        textColor           : 0, 0, 0
+
+    Focus
+        left                : 55, 180, 5, 21
+        center              : 68, 180, 5, 21
+        right               : 81, 180, 5, 21
+        offsets             : [0, 0], 0
